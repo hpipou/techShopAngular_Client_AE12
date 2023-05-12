@@ -22,7 +22,7 @@ import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.compon
     AppRoutingModule,
     ProfilModule,
     ProductsModule,
-    UserModule
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

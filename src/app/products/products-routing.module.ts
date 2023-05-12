@@ -5,11 +5,12 @@ import { DetailsComponent } from './details/details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderedComponent } from './ordered/ordered.component';
+import { AddComponent } from './add/add.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-  {path:'product/details/:id', component:DetailsComponent},
-  {path:'product/add'},
+  {path:'show/:id', component:DetailsComponent},
+  {path:'add', component:AddComponent},
   {path:'cart', component:CartComponent},
   {path:'checkout', component:CheckoutComponent},
   {path:'ordered', component:OrderedComponent}

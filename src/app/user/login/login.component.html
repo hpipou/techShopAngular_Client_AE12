@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="loginPage p-5">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+
+
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label p-0 m-0">Email address</label>
+            <input type="email" class="form-control p-3" id="email" aria-describedby="emailHelp">
+            <div class="alert alert-danger mt-1">Email is required</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label p-0 m-0">Password</label>
+            <input type="password" class="form-control p-3" id="password">
+            <div class="alert alert-danger mt-1">Password is required</div>
+          </div>
+
+          <button type="submit" class="loginButton">LOGIN</button>
+        </form>
+
+        <div class="text-center mb-3">
+          <hr class="mt-5 mb-3">
+          <p>CREATE NEW ACCOUNT</p>
+          <a routerLink="/user/register" class="registerButton">REGISTER</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

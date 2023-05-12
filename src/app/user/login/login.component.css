@@ -1,0 +1,92 @@
+.loginPage{
+  background-color: #3d061c;
+  color: white;
+}
+
+.imageIcone{
+  max-width: 200px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* BOUTON DEBUT */
+.registerButton{
+
+  width: 100%;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: 1px solid #c91b1b;
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  color: #fff;
+
+}
+
+.registerButton:hover{
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 23px;
+  border: 1px solid #222222;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  color: #222222;
+
+}
+
+.loginButton{
+
+  width: 100%;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 15px 24px;
+  border: 0;
+  color: #fff;
+  background: #000a47;
+  line-height: 1.15;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.loginButton:hover{
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 15px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #e7ebee;
+  line-height: 1.15;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+
+}
+
+/* FIN BUTTON */
+
+
+/* LIEN NONE STYLE */
+a{
+  text-decoration: none;
+  text-decoration-line: none
+}
