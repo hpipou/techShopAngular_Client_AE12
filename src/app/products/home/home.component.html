@@ -1,5 +1,189 @@
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
+<div class="homeWelcome">
+
+  <div class="container">
+    <div class="row">
+      <!-- LEFT SIDEBAR START -->
+      <div class="col-md-4">
+        <div class="bgMaron">
+          <h5>ADD NEW PRODUCT</h5>
+          <a routerLink="/add" class="addProduct">ADD PRODUCT</a>
+        </div>
+
+        <div class="bgMaron mt-3 mb-5">
+          <h5>PRICING</h5>
+          <div class="text-center">
+            <input type="range" name="rangeValue" [(ngModel)]="rangeValue" />
+            <p class="amount mb-4 p-0">$ 0 - {{rangeValue * 10}}</p>
+          </div>
+          <h5 class="mb-4">CATEGORIES</h5>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-camera ms-3 me-2"></i> Camera</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-headphones ms-3 me-2"></i> Casques</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-brands fa-usb ms-3 me-2"></i> Cables</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-battery-full ms-3 me-2"></i> Batteries</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-bolt ms-3 me-2"></i> Chargers</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-tv ms-3 me-2"></i> Televisions</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-brands fa-phoenix-squadron ms-3 me-2"></i> Drones</a>
+          <hr>
+          <a routerLink="/add"><i class="fa-solid fa-keyboard ms-3 me-2 mb-5"></i> Accessories</a>
+        </div>
+      </div>
+      <!-- LEFT SIDEBAR END -->
+
+      <!-- PRODUCT LIST START -->
+      <div class="col-md-8">
+        <div class="row g-2 listProduits">
+
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod01.png" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">50€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod02.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">15€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod03.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">20€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod04.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">45€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod05.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">33€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod06.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">28€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod01.png" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">47€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod02.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">11€</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="bgProduct">
+              <img src="../../../assets/produits/prod03.jpg" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="priceProduct">36€</p>
+            </div>
+          </div>
+
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination mt-4">
+            <li class="page-item"><a class="page-link text-black" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">4</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">5</a></li>
+            <li class="page-item"><a class="page-link text-black" href="#">Next</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- PRODUCT LIST END -->
+    </div>
+  </div>
+
+</div>

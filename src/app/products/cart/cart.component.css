@@ -1,0 +1,46 @@
+.cart{
+  background-color: #3d061c;
+  color: white;
+  padding: 20px;
+}
+.textWhite{
+  color:white;
+}
+.imgProduct{
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #1c010c !important;
+}
+
+.addProduct{
+
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #fff;
+  background: #1c010c;
+  line-height: 1.15;
+  font-size: 16px;
+  margin-bottom: 200px;
+}
+.addProduct:hover{
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #e7ebee;
+  line-height: 1.15;
+  font-size: 16px;
+}

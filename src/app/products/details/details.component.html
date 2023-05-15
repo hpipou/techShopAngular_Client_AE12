@@ -1,1 +1,59 @@
-<p>details works!</p>
+<div class="homeWelcome">
+
+  <div class="container">
+    <div class="row">
+      <!-- LEFT SIDEBAR START -->
+      <div class="col-md-4">
+        <div class="bgMaron">
+          <h5>ADD NEW PRODUCT</h5>
+          <a routerLink="/add" class="addProduct">ADD PRODUCT</a>
+        </div>
+
+        <div class="bgMaron my-3">
+          <h5>TOP 5 PRODUCT</h5>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+          <a routerLink="/add" class="addProduct my-2">ADD PRODUCT</a>
+        </div>
+      </div>
+      <!-- LEFT SIDEBAR END -->
+
+      <!-- PRODUCT LIST START -->
+      <div class="col-md-8">
+        <div class="row g-2 listProduits bgProduct">
+
+          <div class="col-md-4 col-sm-6 produit">
+            <div class="">
+              <img src="../../../assets/produits/prod01.png" alt="produit xxx">
+              <div class="text-center mt-3"><h6>CASQUE bluetooth</h6></div>
+              <div class="text-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 produit">
+            <h1>Product name</h1>
+            <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            <p class="fs-5">Price : 50 euros</p>
+            <p class="fs-5">Quantity : <input type="number" id="tentacles" value="1" name="tentacles" min="1" max="100"></p>
+            <button (click)="addToCart()" class="btn btn-success addProduct">ADD CART</button>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- PRODUCT LIST END -->
+    </div>
+  </div>
+
+</div>
+

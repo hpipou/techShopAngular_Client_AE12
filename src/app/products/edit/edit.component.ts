@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-add',
-  templateUrl: './add.component.html',
-  styleUrls: ['./add.component.css']
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.css']
 })
-export class AddComponent implements OnInit {
+export class EditComponent implements OnInit {
 
-  constructor() {
-
-   }
+  constructor() { }
 
   ngOnInit(): void {
   }
+
 
   thumbnailURL!: string | ArrayBuffer | null;
 

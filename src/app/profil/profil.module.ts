@@ -6,6 +6,8 @@ import { ProfilComponent } from './profil/profil.component';
 import { OrderedComponent } from './ordered/ordered.component';
 import { DeleteComponent } from './delete/delete.component';
 import { LogoutComponent } from './logout/logout.component';
+import { LeftsidebarComponent } from './leftsidebar/leftsidebar.component';
+import { PasswordComponent } from './password/password.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { LogoutComponent } from './logout/logout.component';
     ProfilComponent,
     OrderedComponent,
     DeleteComponent,
-    LogoutComponent
+    LogoutComponent,
+    LeftsidebarComponent,
+    PasswordComponent
   ],
   imports: [
     CommonModule,

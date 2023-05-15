@@ -1,0 +1,10 @@
+.ordered{
+  background-color: #3d061c;
+  color: white;
+  padding: 20px;
+}
+
+.jumbotron{
+  box-shadow: 2px 2px 4px #000000;
+  margin-bottom: 100px;
+}

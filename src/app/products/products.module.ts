@@ -8,7 +8,8 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderedComponent } from './ordered/ordered.component';
 import { AddComponent } from './add/add.component';
-
+import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { AddComponent } from './add/add.component';
     CartComponent,
     CheckoutComponent,
     OrderedComponent,
-    AddComponent
+    AddComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    FormsModule
   ]
 })
 export class ProductsModule { }
