@@ -19,22 +19,35 @@ export class PasswordComponent implements OnInit {
 
   ngOnInit(): void {
     this.myForm = this.fb.group({
-      oldpassword: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      newpassword: ['', Validators.required],
+      confirmpassword: ['', Validators.required]
     });
+
   }
 
+  successWindow = false
   errorMessage = ''
   errorWindow = false
+  token= ''
   onSubmit() {
-    this.userService.register(this.myForm.value).subscribe(
-      (data)=>{
-        this.route.navigateByUrl('/')},
-      (error)=>{
-        this.errorMessage = error.error.error
-        this.errorWindow = true
-        console.log(error)}).unsubscribe
+    if(this.myForm.value.newpassword!=this.myForm.value.confirmpassword)
+    {
+      this.errorMessage = "NEW PASSWORD CONFIRMATION ERROR"
+      this.errorWindow = true
+    }else{
+
+      this.userService.changePassword(this.myForm.value).subscribe(
+        ()=>{
+          this.successWindow = true
+        },
+        (error)=>{
+          this.errorMessage = error.error.error
+          this.errorWindow = true
+          this.successWindow = false
+        }).unsubscribe
+    }
+
   }
 
 }
