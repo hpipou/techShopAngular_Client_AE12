@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { HeaderServiceService } from 'src/app/services/header-service.service';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @Output() updateHeader: EventEmitter<any> = new EventEmitter();
+
+  constructor(private headerRefresh:HeaderServiceService) { }
   connected = false
   token = localStorage.getItem('token')
 
   ngOnInit(): void {
+
+    this.headerRefresh.status$.subscribe((product) => {
+      if(product){
+        this.connected = product.status
+      }
+    });
 
     if(this.token==null){
       this.connected = false
