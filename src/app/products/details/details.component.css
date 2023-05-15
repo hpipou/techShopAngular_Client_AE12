@@ -111,3 +111,26 @@ a{
   box-shadow: 0 5px 10px rgba(0,0,0,0.12);
 }
 
+.reviewYellow{
+  background-color: white;
+  padding: 10px 30px;
+  width: 120px;
+  color: #3d061c;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.imdUser{
+  border-radius: 5px;
+  border: 3px solid #3d061c;
+  width: 80px;
+  max-width: 80px;
+  height: 80px;
+}
+
+.backWhite{
+  background-color: #fff;
+  color: #3d061c;
+  margin:0;
+  padding: 0;
+}
