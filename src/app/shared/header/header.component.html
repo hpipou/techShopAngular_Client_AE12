@@ -4,8 +4,10 @@
       <a routerLink="/"><i class="fa-solid fa-house"></i> HOME</a>
 
       <div class="d-flex justify-content-between justify-item-center">
-        <a routerLink="/add"><i class="fa-solid fa-square-plus"></i> ADD PRODUCT</a>
-        <a routerLink="/profil"><i class="fa-solid fa-user ms-4"></i> MY PROFIL</a>
+        <a *ngIf="!connected" routerLink="/user/login"><i class="fa-solid fa-square-plus ms-4"></i> LOGIN</a>
+        <a *ngIf="!connected" routerLink="/user/register"><i class="fa-solid fa-square-plus ms-4"></i> REGISTER</a>
+        <a *ngIf="connected" routerLink="/add"><i class="fa-solid fa-square-plus ms-4"></i> ADD PRODUCT</a>
+        <a *ngIf="connected" routerLink="/profil"><i class="fa-solid fa-user ms-4"></i> MY PROFIL</a>
         <a routerLink="/cart"><i class="fa-brands fa-shopify ms-4"></i> CART</a>
       </div>
 

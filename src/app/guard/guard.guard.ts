@@ -18,11 +18,11 @@ export class GuardGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
       if(this.token==null){
-        this.route.navigate(['/'])
+        this.route.navigate(['/user/login'])
         return false;
       }else{
         if (this.tokenExpired(this.token)) {
-          this.route.navigate(['/'])
+          this.route.navigate(['/user/login'])
           return false;
         } else {
           return true;
