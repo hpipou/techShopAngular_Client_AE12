@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ProfilComponent implements OnInit {
 
   constructor() { }
+  id! : any
+  email! : any
+  username! : any
 
   ngOnInit(): void {
+    this.id = localStorage.getItem('id')
+    this.email = localStorage.getItem('email')
+    this.username = localStorage.getItem('username')
   }
 
 }

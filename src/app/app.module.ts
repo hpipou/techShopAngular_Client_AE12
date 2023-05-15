@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfilModule } from './profil/profil.module';
@@ -23,6 +23,7 @@ import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.compon
     ProfilModule,
     ProductsModule,
     UserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
