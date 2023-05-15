@@ -14,7 +14,8 @@ export class TokeninterceptorInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
 
-    if (request.url.includes('http://localhost:3000/user/password')) {
+    if (request.url.includes('http://localhost:3000/user/password') ||
+        request.url.includes('http://localhost:3000/user/delete')) {
       // Récupère le token d'authentification depuis le localStorage ou tout autre endroit où tu le stockes
       const token = localStorage.getItem('token');
 
