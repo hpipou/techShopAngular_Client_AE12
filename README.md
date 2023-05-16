@@ -2,6 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
+## Fonctionnalités réalisées :
+- [x]  Création des SERVICES liés à l'utilisateur
+- [x]  S'inscrire (Reactive form avec validation)
+- [x]  Se connecter (Reactive form avec validation)
+- [x]  Changer le mot de passe
+- [x]  Supprimer le compte
+- [x]  Ajouter un produit
+- [x]  Service ajouter au panier
+- [x]  Protection des routes avec des GUARDS
+- [x]  Ajouter un INTERCEPTOR pour y joindre le token
+
+## Tickets à réaliser par `Bernard_AS07254` :
+- [ ] Modifier un produit
+- [ ] Afficher un produit
+- [ ] Supprimer un produit
+- [ ] Afficher tous les produits
+
+<div align="center">
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a01.png"/>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a02.png"/>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a03.png"/>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a04.png"/>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a07.png"/>
+</div>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
