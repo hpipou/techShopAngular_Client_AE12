@@ -32,18 +32,65 @@
       <div class="col-md-8">
         <div class="row g-2 bgProduct">
 
-          <form>
+          <div *ngIf="uploadSuccess" id='card' class="animated fadeIn">
+            <div id='upper-side'>
+
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+                  <path d="M131.583,92.152l-0.026-0.041c-0.713-1.118-2.197-1.447-3.316-0.734l-31.782,20.257l-4.74-12.65
+            c-0.483-1.29-1.882-1.958-3.124-1.493l-0.045,0.017c-1.242,0.465-1.857,1.888-1.374,3.178l5.763,15.382
+            c0.131,0.351,0.334,0.65,0.579,0.898c0.028,0.029,0.06,0.052,0.089,0.08c0.08,0.073,0.159,0.147,0.246,0.209
+            c0.071,0.051,0.147,0.091,0.222,0.133c0.058,0.033,0.115,0.069,0.175,0.097c0.081,0.037,0.165,0.063,0.249,0.091
+            c0.065,0.022,0.128,0.047,0.195,0.063c0.079,0.019,0.159,0.026,0.239,0.037c0.074,0.01,0.147,0.024,0.221,0.027
+            c0.097,0.004,0.194-0.006,0.292-0.014c0.055-0.005,0.109-0.003,0.163-0.012c0.323-0.048,0.641-0.16,0.933-0.346l34.305-21.865
+            C131.967,94.755,132.296,93.271,131.583,92.152z" />
+                  <circle fill="none" stroke="#ffffff" stroke-width="5" stroke-miterlimit="10" cx="109.486" cy="104.353" r="32.53" />
+                </svg>
+                <h3 id='status'>
+                Success
+              </h3>
+            </div>
+            <div id='lower-side'>
+              <p class="text-dark mt-2">
+                Congratulations, your product has been successfully added.
+              </p>
+              <div>
+                <a routerLink="/" class="addProduct"><i class="fa-solid fa-house"></i> GO HOME</a>
+              </div>
+              <div>
+                <button (click)="makeMeRefresh()" class="addProduct mt-2"><i class="fa-solid fa-square-plus"></i> NEW PRODUCT</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <form *ngIf="!uploadSuccess" [formGroup]="myForm" (ngSubmit)="onSubmit()">
 
             <div class="mb-3">
               <label for="name" class="form-label p-0 m-0">Product name</label>
-              <input type="text" class="form-control p-2" id="name">
-              <div *ngIf="2>5" class="alert alert-danger mt-1">Product name is required</div>
+              <input type="text" class="form-control p-2" id="name" formControlName="productName">
+              <div *ngIf="myForm.get('productName')?.invalid && myForm.get('productName')?.touched">
+                <div class="alert alert-danger mt-1" *ngIf="myForm.get('productName')?.errors?.['required']">Product name is required</div>
+              </div>
+            </div>
+
+            <div class="mb-3 mt-3">
+              <label for="details" class="form-label p-0 m-0">Product details</label>
+              <textarea class="form-control p-4" id="details"  formControlName="productDetails"></textarea>
+              <div *ngIf="myForm.get('productDetails')?.invalid && myForm.get('productDetails')?.touched">
+                <div class="alert alert-danger mt-1" *ngIf="myForm.get('productDetails')?.errors?.['required']">Product details is required</div>
+              </div>
             </div>
 
             <div class="mb-3">
               <label for="price" class="form-label p-0 m-0">Price</label>
-              <input type="number" class="form-control p-2" id="price">
-              <div *ngIf="2>5" class="alert alert-danger mt-1">Price is required</div>
+              <input type="number" class="form-control p-2" id="price" formControlName="productPrice">
+              <div *ngIf="myForm.get('productPrice')?.invalid && myForm.get('productPrice')?.touched">
+                <div class="alert alert-danger mt-1" *ngIf="myForm.get('productPrice')?.errors?.['required']">Product price is required</div>
+              </div>
             </div>
 
             <p class="m-0 p-0">Product image</p>
@@ -66,12 +113,6 @@
                 <option value="8">Accessories</option>
               </select>
               <div *ngIf="2>5" class="alert alert-danger mt-1">Product name is required</div>
-            </div>
-
-            <div class="mb-3 mt-3">
-              <label for="details" class="form-label p-0 m-0">Product details</label>
-              <textarea class="form-control p-4" id="details"></textarea>
-              <div *ngIf="2>5" class="alert alert-danger mt-1">Product details is required</div>
             </div>
 
             <button type="submit" class="addProduct w-100 py-3 fw-bold">ADD PRODUCT</button>
