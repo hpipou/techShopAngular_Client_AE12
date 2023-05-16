@@ -3,6 +3,19 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
 ## Fonctionnalités réalisées :
+- [x]  Création des pages : 
+    - [x] LOGIN
+    - [x] REGISTER
+    - [x] HOME
+    - [x] PRODUCT DETAILS
+    - [x] ADD NEW PRODUCT
+    - [x] EDIT PRODUCT
+    - [x] MY PROFIL
+    - [x] MY ORDERS
+    - [x] CHANGE PASSWORD
+    - [x] DELETE ACCOUNT
+    - [x] CART
+    - [x] CHECKOUT
 - [x]  Création des SERVICES liés à l'utilisateur
 - [x]  S'inscrire (Reactive form avec validation)
 - [x]  Se connecter (Reactive form avec validation)
@@ -20,11 +33,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [ ] Afficher tous les produits
 
 <div align="center">
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a01.png"/>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a02.png"/>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a03.png"/>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a04.png"/>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a07.png"/>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a01.png"/><br>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a02.png"/><br>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a03.png"/><br>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a04.png"/><br>
+  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a07.png"/><br>
 </div>
 
 ## Development server
