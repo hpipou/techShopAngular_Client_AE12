@@ -33,11 +33,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [ ] Afficher tous les produits
 
 <div align="center">
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a01.png"/><br>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a02.png"/><br>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a03.png"/><br>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a04.png"/><br>
-  <img width="495px" src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a07.png"/><br>
+  <img src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a01.png"/><br>
+  <img src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a02.png"/><br>
+  <img src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a03.png"/><br>
+  <img src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a04.png"/><br>
+  <img src="https://github.com/hpipou/techShopAngular_Client_AE12/blob/main/screenshot/a07.png"/><br>
 </div>
 
 ## Development server
